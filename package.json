@@ -1,14 +1,23 @@
 {
-  "name": "environment-chatbot",
+  "name": "messenger-webhook",
   "version": "1.0.0",
+  "description": "a webhook for facebook messenger",
   "main": "index.js",
-  "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "MONGODB_URI=mongodb://localhost:27017 node index.js",
+    "test": "npm test"
   },
+  "keywords": [
+    "messenger",
+    "webhook"
+  ],
+  "author": "Vivian Chan",
+  "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "request": "^2.88.2"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.0-rc0",
+    "request": "^2.83.0"
   }
 }
+
